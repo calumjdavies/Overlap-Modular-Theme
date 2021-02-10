@@ -21,6 +21,19 @@
   <link href="css/business-casual.css" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+<!-- Wait to load -->
+
+<script type="text/javascript">
+
+  $(window).load(function() {
+    // Animate loader off screen
+    console.log("Worked");
+    $(".se-pre-con").fadeOut("slow");
+  });
+</script>
 </head>
 
 <body>

@@ -22,9 +22,25 @@
   <!-- Custom styles for this template -->
   <link href="css/business-casual.css" rel="stylesheet">
 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+<!-- Wait to load -->
+
+<script type="text/javascript">
+
+  $(window).load(function() {
+    // Animate loader off screen
+    console.log("Worked");
+    $(".se-pre-con").fadeOut("slow");
+  });
+</script>
 </head>
 
 <body>
+  <div class="se-pre-con"></div>
+
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
     <div class="container">
@@ -96,15 +112,15 @@
               </li>
               <li class="list-unstyled-item list-hours-item d-flex">
                 Monday
-                <span class="ml-auto">11AM - 10PM</span>
+                <span class="ml-auto">11am-10pm</span>
               </li>
               <li class="list-unstyled-item list-hours-item d-flex">
                 Tuesday
-                <span class="ml-auto">11AM - 10PM</span>
+                <span class="ml-auto">11am-10pm</span>
               </li>
               <li class="list-unstyled-item list-hours-item d-flex">
                 Wednesday
-                <span class="ml-auto">11AM - 10PM</span>
+                <span class="ml-auto">11am-10pm</span>
               </li>
               <li class="redHour list-unstyled-item list-hours-item d-flex">
                 Thursday
@@ -112,11 +128,11 @@
               </li>
               <li class="list-unstyled-item list-hours-item d-flex">
                 Friday
-                <span class="ml-auto">11AM - 10PM</span>
+                <span class="ml-auto">11am-10pm</span>
               </li>
               <li class="list-unstyled-item list-hours-item d-flex">
                 Saturday
-                <span class="ml-auto">1PM - 9PM</span>
+                <span class="ml-auto">1pm-9pm</span>
               </li>
             </ul>
             <p class="address mb-5">
@@ -148,6 +164,10 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+
+
 
 </body>
 
