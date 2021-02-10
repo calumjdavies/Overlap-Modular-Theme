@@ -19,6 +19,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/business-casual.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
 
 </head>
 
@@ -80,7 +81,9 @@
 
   <footer class="footer text-white text-center py-5">
     <div class="container">
-      <p class="m-0 small">Copyright &copy; Your Website 2020</p>
+      <p id="copyright" class="m-0 small">Copyright &copy; Your Website, <script>
+          document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
+      </script></p>
     </div>
   </footer>
 

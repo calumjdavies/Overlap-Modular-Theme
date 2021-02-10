@@ -219,15 +219,26 @@ a:hover {
 }
 
 .list-hours .list-hours-item {
-  border-bottom: 1px solid rgba(230, 167, 86, 0.5);
-  padding-bottom: .25rem;
+  border-bottom: 5px solid rgb(230 167 86);
+  padding-bottom: 1rem;
   margin-bottom: 1rem;
-  font-style: italic;
+  font-style: normal;
 }
 
 .list-hours .list-hours-item.today {
   font-weight: bold;
   color: #e6a756;
+}
+
+#topHour {
+  padding-top: 1rem;
+  margin-top:2rem;
+  border-top: 5px solid rgb(230 167 86);
+}
+
+.redHour {
+  color: #ff3333;
+  font-weight: 900;
 }
 
 @media (min-width: 992px) {

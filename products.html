@@ -9,6 +9,7 @@
   <meta name="author" content="">
 
   <title>Flinders Theme - </title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -54,7 +55,7 @@
     </div>
   </nav>
 
-  
+
   <h1 class="site-heading text-center text-white">
     <span class="site-heading-upper text-primary mb-3">Lorem Ipsum Dolor Sit Amet</span>
     <span class="site-heading-lower">Flinders Theme</span>
@@ -125,7 +126,9 @@
 
   <footer class="footer text-white text-center py-5">
     <div class="container">
-      <p class="m-0 small">Copyright &copy; Your Website 2020</p>
+      <p id="copyright" class="m-0 small">Copyright &copy; Your Website, <script>
+          document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
+      </script></p>
     </div>
   </footer>
 
